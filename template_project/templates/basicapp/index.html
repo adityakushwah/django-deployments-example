@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends "basicapp/base.html" %}
+    {% block body_block %}
+        <h1>Welcome to Index Page</h1>
+        <a href="{% url 'admin:index' %}">Link to Admin Page</a>
+        {{ text|upper }}
+        {{ number|add:"99" }}
+        {{ text|cut:' '}}
+    {% endblock %}
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Index Page</title>
+    </head>
+
+    <body>
+        <h1>Welcome to Index Page</h1>
+        <a href="{% url 'admin:index' %}">Link to Admin Page</a>
+    </body>
+</html> -->
